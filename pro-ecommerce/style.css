@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    }
+    
+    
+    body{
+    
+    background:#f5f6fa;
+    
+    }
+    
+    
+    
+    /* Header */
+    
+    
+    header{
+    
+    height:70px;
+    background:#111827;
+    color:white;
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    
+    padding:0 40px;
+    
+    }
+    
+    
+    .logo{
+    
+    font-size:25px;
+    font-weight:bold;
+    
+    }
+    
+    
+    nav a{
+    
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    
+    }
+    
+    
+    .cart-icon{
+    
+    background:#2563eb;
+    padding:10px 15px;
+    border-radius:20px;
+    
+    }
+    
+    
+    
+    
+    
+    /* Hero */
+    
+    
+    .hero{
+    
+    height:400px;
+    
+    background:
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),
+    url("https://picsum.photos/1200/500");
+    
+    
+    background-size:cover;
+    
+    display:flex;
+    
+    align-items:center;
+    
+    padding:60px;
+    
+    color:white;
+    
+    }
+    
+    
+    .hero h1{
+    
+    font-size:45px;
+    
+    }
+    
+    
+    .hero p{
+    
+    font-size:20px;
+    margin:20px 0;
+    
+    }
+    
+    
+    button{
+    
+    background:#2563eb;
+    color:white;
+    
+    border:none;
+    
+    padding:12px 25px;
+    
+    border-radius:6px;
+    
+    cursor:pointer;
+    
+    }
+    
+    
+    
+    
+    /* Search */
+    
+    
+    .search-area{
+    
+    padding:30px;
+    
+    display:flex;
+    
+    gap:20px;
+    
+    justify-content:center;
+    
+    }
+    
+    
+    input,select{
+    
+    padding:15px;
+    
+    width:300px;
+    
+    border-radius:8px;
+    
+    border:1px solid #ddd;
+    
+    }
+    
+    
+    
+    
+    
+    /* Products */
+    
+    
+    .shop{
+    
+    padding:30px;
+    
+    }
+    
+    
+    .shop h2{
+    
+    text-align:center;
+    
+    margin-bottom:30px;
+    
+    }
+    
+    
+    
+    .products{
+    
+    display:grid;
+    
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    
+    gap:25px;
+    
+    }
+    
+    
+    
+    .card{
+    
+    background:white;
+    
+    padding:20px;
+    
+    border-radius:15px;
+    
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.1);
+    
+    transition:.3s;
+    
+    }
+    
+    
+    
+    .card:hover{
+    
+    transform:translateY(-8px);
+    
+    }
+    
+    
+    .card img{
+    
+    width:100%;
+    
+    height:200px;
+    
+    object-fit:cover;
+    
+    border-radius:10px;
+    
+    }
+    
+    
+    
+    .card h3{
+    
+    margin:15px 0;
+    
+    }
+    
+    
+    .price{
+    
+    color:#16a34a;
+    
+    font-size:22px;
+    
+    font-weight:bold;
+    
+    }
+    
+    
+    
+    
+    
+    
+    /* Cart */
+    
+    
+    .cart-panel{
+    
+    position:fixed;
+    
+    right:-400px;
+    
+    top:0;
+    
+    height:100%;
+    
+    width:350px;
+    
+    background:white;
+    
+    padding:25px;
+    
+    box-shadow:
+    -5px 0 20px #aaa;
+    
+    transition:.4s;
+    
+    }
+    
+    
+    
+    .cart-panel.active{
+    
+    right:0;
+    
+    }
+    
+    
+    
+    .cart-item{
+    
+    display:flex;
+    
+    justify-content:space-between;
+    
+    margin:15px 0;
+    
+    }
+    
+    
+    
+    .checkout{
+    
+    width:100%;
+    
+    margin-top:20px;
+    
+    }
+    
+    
+    
+    
+    @media(max-width:700px){
+    
+    header{
+    
+    padding:20px;
+    
+    }
+    
+    
+    nav{
+    
+    display:none;
+    
+    }
+    
+    
+    .hero h1{
+    
+    font-size:30px;
+    
+    }
+    
+    
+    }
